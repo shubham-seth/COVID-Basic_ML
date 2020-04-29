@@ -88,8 +88,6 @@ best_pred = ((a*x)/(x**2+b*x+c)) + d
 print(a, b, c, d)
 plt.scatter(x[:len(y)]*x_max,y*y_max,c='blue')
 for i in range(len(x)):
-	if(best_pred[i]*y_max < 5000):
-		print(i)
 	plt.scatter(x[i]*x_max,best_pred[i]*y_max,c='red')
 plt.title("Daily-New-Cases: USA")
 plt.show()
